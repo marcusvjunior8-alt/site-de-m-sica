@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+audio {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#container-music {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 15px 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    scroll-snap-type: x mandatory;
+}
+
+.card-music {
+    background-color: #1e1e1e;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    flex: 0 0 160px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#container-music::-webkit-scrollbar {
+    height: 8px;
+}
+
+#container-music::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.card-music {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    flex: 0 0 180px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+.card-music:hover {
+    background-color: #282828;
+    transform: translateY(-4px);
+}
+
+.picture-music img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          
+}
+
+.picture-music {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.card-music h3 {
+    font-size: 0.95rem;
+    margin: 0 0 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-music p {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
